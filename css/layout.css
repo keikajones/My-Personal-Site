@@ -4,16 +4,30 @@
 	padding: 0;
 }
 
-#name{
-	font-size: 80px;
+*,
+*:after,
+*::before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+a{
+	text-decoration: none;
 	color: #fff;
-	margin: 0;
-	padding: 30px 0 0 30px;
+}
+
+#name{
+	font-size: 60px;
+	color: #fff;
+	margin-right: 15px;
+	padding: 50px 0 0 25px;
+	float: left;
 }
 
 .banner{
 	background: #9591A6;
-	height: 250px;
+	height: 200px;
 	margin: 0;
 }
 
@@ -23,15 +37,17 @@ nav{
 
 nav ul{
 	margin-top: 0;	
-	padding-bottom: 20px;
-	padding-left: 30px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 15px;
 }
 
 nav ul li{
 	display: inline-block;
-	margin-right: 40px;
+	margin-right: 5px;
 	font-family: sans-serif;
 	text-transform: uppercase;
+	font-size: 14px;
 }
 
 nav ul li a{
@@ -39,8 +55,39 @@ nav ul li a{
 	color: #fff;
 }
 
-nav ul li a:hover{
-	color: #634F77;
+.cl-effect-1 a::before,
+.cl-effect-1 a::after {
+	display: inline-block;
+	opacity: 0;
+	-webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
+	-moz-transition: -moz-transform 0.3s, opacity 0.2s;
+	transition: transform 0.3s, opacity 0.2s;
+}
+
+.cl-effect-1 a::before {
+	margin-right: 10px;
+	content: '[';
+	-webkit-transform: translateX(20px);
+	-moz-transform: translateX(20px);
+	transform: translateX(20px);
+}
+
+.cl-effect-1 a::after {
+	margin-left: 10px;
+	content: ']';
+	-webkit-transform: translateX(-20px);
+	-moz-transform: translateX(-20px);
+	transform: translateX(-20px);
+}
+
+.cl-effect-1 a:hover::before,
+.cl-effect-1 a:hover::after,
+.cl-effect-1 a:focus::before,
+.cl-effect-1 a:focus::after {
+	opacity: 1;
+	-webkit-transform: translateX(0px);
+	-moz-transform: translateX(0px);
+	transform: translateX(0px);
 }
 
 .wrap{
@@ -52,12 +99,32 @@ nav ul li a:hover{
 }
 
 .mainContent{
-	width: 70%;
-	height: 1000px;
-	border: solid 0px #000;
+	width: 700px;
+	height: 635px;
+	background: #fff;
 }
 
-article{
+.favoriteImages{
+	max-height: 350px;
+	max-width: 350px;
+	margin: 0;
+}
+
+/*.favoriteImages:hover{
+	opacity: 0.5;
+    filter: alpha(opacity=40);
+}*/
+
+.transbox{
+	position: absolute;
+	color: rgba(0,0,0,0);
+}
+
+.transbox:hover{
+	color: #fff;
+}
+
+/*article{
 	height: 300px;
 	margin-top: 40px;
 }
@@ -82,30 +149,39 @@ article{
 .articleTitle{
 	padding-top: 30px;
 	padding-left: 110px;
-}
+}*/
 
 .sidebar{
-	width: 30%;
-	height: 1000px;
+	width: 425px;
+	height: 700px;
 	background: #F6EEFF;
 	border: solid 0px #000;
+	float: right;
 }
 
 #avatar{
-	width: 32%;
+	width: 150px;
 	margin: 0 auto;
 }
 
 #headshot{
-	max-height: 100px;
-	max-width: 100px;
+	max-height: 150px;
+	max-width: 150px;
 	border-radius: 50%;
-	margin-top: 15px;
+	margin-top: 50px;
+}
+
+#blurb{
+	font-size: 14px;
+	width: 200px;
+	text-align: center;
+	margin: 0 auto;
+	margin-top: 5px;
 }
 
 .smsLinks ul{
-	width: 41%;
-	margin: 0 auto;
+	width: 350px;
+	padding-left: 150px;	
 }
 
 .smsLinks ul li{
@@ -116,6 +192,13 @@ article{
 .smsIcon{
 	max-width: 40px;
 	max-height: 40px;
+	opacity: 0.4;
+    filter: alpha(opacity=40);
+}
+
+.smsIcon:hover{
+	opacity: 1.0;
+    filter: alpha(opacity=100);
 }
 
 
