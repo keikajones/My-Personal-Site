@@ -186,36 +186,43 @@ nav ul li a{
 
 .bio-text p{
 	text-align: center;
-	margin: 20px 50px 20px 50px;
+	margin: 20px 200px 20px 200px;
 }
 
-/* =============BLOG===============*/
-
-article{
-	height: 300px;
-	margin-top: 40px;
+#blue{
+	max-width: 300px;
+	max-height: 300px;
+	margin-top: 20px;
+	margin-left: 435px;
 }
 
-.date{
-	float: left;
-	height: 70px;
-	width: 70px;
-	background: #9591A6;
-	border-radius: 50%;
-	margin: 20px 0 0 20px;
+
+/*===========PORTFOLIO==========*/
+
+.overall-works{
+	max-width: 500px;
+}
+.works{
+	max-height: 60%;
+	max-width: 60%;
+	margin: 100px 20px 20px 98px;
+	border: 1px solid #ccc;
+	padding: 5px;
 }
 
-.today-date{
-	padding-left: 15px;
-	padding-top: 30px;
-	font-family: sans;
-	font-size: 12px;
-	color: #fff;
+.works:hover{
+	opacity: .7;
+    -webkit-transform: scale(1.5,1.5);
+    -webkit-transition-timing-function: ease-out;
+    -webkit-transition-duration: 250ms;
+    -moz-transform: scale(1.5,1.5);
+    -moz-transition-timing-function: ease-out;
+    -moz-transition-duration: 250ms;
 }
 
-.articleTitle{
-	padding-top: 45px;
-	padding-left: 110px;
+.works-text{
+	text-align: center;
+	margin-top: 30px;
 }
 
 
@@ -277,10 +284,6 @@ form p{
     border-radius: 3px;
     cursor: pointer;
     letter-spacing: 2px;
-}
-
-.form .button:hover {
-    border: solid 1px #aaa;
 }
 
 .form input, .form textarea, .form .button:focus{
