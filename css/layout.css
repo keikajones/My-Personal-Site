@@ -13,7 +13,7 @@
 }
 
 .wrap{
-	max-width: 1125px;
+	max-width: 1200px;
 	margin: 0 auto;
 }
 
@@ -90,19 +90,23 @@ nav ul li a{
 	transform: translateX(0px);
 }
 
-.mainContent{
+.mainContent, .mainContent2 {
 	float: right;
-}
-
-.mainContent{
-	width: 700px;
-	height: 350px;
+	height: 400px;
 	background: #fff;
 }
 
+.mainContent{
+	width: 800px;
+}
+
+.mainContent2{
+	width: 1200px;
+}
+
 .favoriteImages{
-	max-height: 350px;
-	max-width: 350px;
+	max-height: 400px;
+	max-width: 400px;
 	margin: 0;
 }
 
@@ -121,8 +125,8 @@ nav ul li a{
 }
 
 .sidebar{
-	width: 425px;
-	height: 350px;
+	width: 400px;
+	height: 400px;
 	background: #F6EEFF;
 	border: solid 0px #000;
 	position: absolute;
@@ -150,7 +154,7 @@ nav ul li a{
 
 .smsLinks ul{
 	width: 350px;
-	padding-left: 150px;	
+	padding-left: 130px;	
 }
 
 .smsLinks ul li{
