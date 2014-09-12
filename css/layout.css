@@ -192,8 +192,17 @@ nav ul li a{
 
 .bio-text p{
 	text-align: center;
-/*	margin: 20px 200px 20px 200px;
-*/}
+}
+
+.fa-quote-left{
+	margin-left: -50px;
+	margin-top: -20px;
+}
+
+.fa-quote-right{
+	margin-right: -70px;
+	margin-top: -20px;
+}
 
 #blue-container{
 	width: 300px;
@@ -205,41 +214,6 @@ nav ul li a{
 	max-height: 300px;
 	margin-top: 50px;
 	margin-bottom: 50px;
-}
-
-
-/*===========PORTFOLIO==========*/
-
-.overall-works{
-	max-width: 500px;
-	margin: 0 auto;
-	margin-bottom: 80px;
-}
-
-.project{
-}
-
-.works{
-	max-height: 60%;
-	max-width: 60%;
-	margin: 100px 20px 30px 98px;
-	border: 1px solid #ccc;
-	padding: 5px;
-}
-
-.works:hover{
-	opacity: .7;
-    -webkit-transform: scale(1.5,1.5);
-    -webkit-transition-timing-function: ease-out;
-    -webkit-transition-duration: 250ms;
-    -moz-transform: scale(1.5,1.5);
-    -moz-transition-timing-function: ease-out;
-    -moz-transition-duration: 250ms;
-}
-
-.works-text{
-	text-align: center;
-	margin-top: 30px;
 }
 
 /*===========CONTACT============*/
